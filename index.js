@@ -48,7 +48,7 @@ io.on('connection', (socket) =>{
 
       socket.on('chat message', (msg,room,usuario) => {
         console.log("escuchó el servidor")
-        io.to(room).emit('chat message', 'EMITE SERVIDOR', "nuevo usuario");
+        io.to(room).emit('chat message', msg, usuario);
 
         // conexion.connect(parametros, function(err) {
         //   if (err) throw err;
