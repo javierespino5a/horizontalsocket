@@ -47,6 +47,7 @@ io.on('connection', (socket) =>{
       });
 
       socket.on('chat message', (msg,room,usuario) => {
+        console.log("llgo")
         conexion.connect(parametros, function(err) {
           if (err) throw err;
           conexion.exec('select count(config."WtmCode") as total from "VERTICAL_PRODUCTIVO"."OWTM" config inner join "VERTICAL_PRODUCTIVO"."WTM1" det_config on det_config."WtmCode" = config."WtmCode" inner join "VERTICAL_PRODUCTIVO"."OUSR" usuario on usuario."USERID" = det_config."UserID"'
