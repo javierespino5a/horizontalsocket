@@ -1,0 +1,11 @@
+{
+    "name": "WS_SuiteOne",
+    "version": "0.0.1",
+    "description": "WebSocket Suite One",
+    "dependencies": {
+        "@sap/hana-client": "^2.10.15",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "socket.io": "^4.3.1"
+    }
+}
